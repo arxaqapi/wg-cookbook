@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Tags</h1>
+
+<div class="taxonomy-container">
+    {% for term in terms %}
+    <div class="term">
+        <a href="{{ term.permalink }}">{{ term.name }} ({{ term.pages | length }})</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

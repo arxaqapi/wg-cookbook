@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    {{ page.title }}
+</h1>
+
+{% if page.extra.author -%}
+<b>Author:</b> {{ page.extra.author | markdown(inline=true)}}
+{%- endif %}
+
+<p>
+    <strong>Recipe added: </strong> {{ page.date }}
+</p>
+
+{% if page.extra.times %}
+<h3>Times</h3>
+<p>
+    Preparation time: {{ page.extra.times.prep_time }} <br>    
+    Cooking time: {{ page.extra.times.cooking_time }}
+</p>
+{% endif %}
+<!-- times -->
+
+{% if page.extra.ingredients %}
+<h3>
+    Ingredients
+</h3>
+<ul>
+    {% for ing in page.extra.ingredients %}
+    <li>
+        {{ ing.name }}: {{ ing.amount }} {% if ing.unit %} {{ ing.unit }}{% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+{% if page.extra.steps %}
+<div class="specs">
+<h3>
+    Steps to follow
+</h3>
+
+<ol>
+{% for step in page.extra.steps %}
+    <li>{{ step }}</li>
+{% endfor %}
+</ol>
+
+</div>
+{% endif %}
+
+<!-- {{ page.content | safe }} -->
+{% endblock content %}

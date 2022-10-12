@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<h2>List of all recipes</h2>
+
+<ul>
+{% for recipe in section.pages %}
+    <li><a href="{{ recipe.permalink | safe }}">{{ recipe.title }}</a></li>
+{% endfor %}
+</ul>
+{% endblock content %}
