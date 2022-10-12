@@ -17,7 +17,7 @@ ingredients = [
 
 steps = [
     "Melt the butter and the chocolate",
-    "Mix the sugar, the vanilla sugar and the eggs whith a whip",
+    "Mix the sugar, the vanilla sugar and the eggs with a whisk",
     "Add the melted butter and chocolate mix and stir",
     "Add the flour",
     "Bake for approx. 20min, at 180°C. The inside should be half-cooked to obtain a nice     melting core."
