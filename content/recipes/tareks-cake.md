@@ -2,7 +2,7 @@
 title = "Tarek's cake"
 date = 2022-10-12
 [taxonomies]
-tags = ["dessert", "chocolate"]
+tags = ["dessert", "chocolate", "bakery", "sweet"]
 [extra]
 author = "Tarek"
 
