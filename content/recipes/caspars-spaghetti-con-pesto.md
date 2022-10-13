@@ -1,5 +1,5 @@
 +++
-title = "Caspers spaghetti con pesto rosso"
+title = "Caspars spaghetti con pesto rosso"
 date = 2022-10-13
 [taxonomies]
 tags = ["pasta"]
