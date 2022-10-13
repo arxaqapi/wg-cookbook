@@ -50,3 +50,17 @@ nav {
     text-align: center;
     margin-bottom: 3rem;
 }
+
+.steps > ol {
+    list-style: none;
+    counter-reset: step-counter 0;
+}
+
+.steps > ol > li {
+    list-style: none;
+    counter-increment: step-counter 1;
+}
+
+.steps > ol > li:before {
+    content: "Step " counter(step-counter) ": " ;
+}
