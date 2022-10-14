@@ -4,7 +4,7 @@ date = 2022-10-13
 [taxonomies]
 tags = ["pasta"]
 [extra]
-author = "Casper"
+author = "Caspar"
 
 ingredients = [
     { name = "Italian spaghetti cucina mobile n°5",amount = 230, unit = "g" },
