@@ -22,7 +22,7 @@ body {
     margin: 1em auto;
     max-width: 40em;
     padding: 0 .62em;
-    font: 1.2em/1.62 sans-serif
+    font: 1.2em/1.72 sans-serif
 }
 
 h1,
@@ -52,6 +52,7 @@ nav {
 }
 
 .steps > ol {
+    padding-left: 22px;
     list-style: none;
     counter-reset: step-counter 0;
 }
@@ -62,5 +63,6 @@ nav {
 }
 
 .steps > ol > li:before {
+    text-decoration: underline;
     content: "Step " counter(step-counter) ": " ;
 }
