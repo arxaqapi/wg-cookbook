@@ -16,7 +16,7 @@ ingredients = [
     { name = "Eggs", amount = 3},
 ]
 steps = [
-    "Melt the chocolate whith the butter",
+    "Melt the chocolate with the butter",
     "Mix the sugar and the eggs together until the mixture turns white",
     "Add the flour, the vanilla sugar and the chocolate-butter mixture",
     "Pour the mix into a bakin form and bake at 180°C for 15 minutes",
