@@ -29,7 +29,7 @@
 <ul>
     {% for ing in page.extra.ingredients %}
     <li>
-        {{ ing.name }}: {{ ing.amount }} {% if ing.unit %} {{ ing.unit }}{% endif %}
+        {{ ing.name }}{% if ing.amount %}: {{ ing.amount }}{% endif %}{% if ing.unit %} {{ ing.unit }}{% endif %}
     </li>
     {% endfor %}
 </ul>
