@@ -33,7 +33,7 @@ steps = [
     "Remove the lid and keep it on the fire until the chicken is cooked",
     "Here you gooo, your Chicken Masala is ready to serve   ",
 ]
-times = {prep_time = 15, cooking_time = 40}
+times = {prep_time = 25, cooking_time = 20}
 +++
 
 ## Note:
