@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
     body {
         color: #fff;
-        background: #000
+        background: rgb(50, 50, 50)
     }
 
     a:link {
