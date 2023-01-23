@@ -44,7 +44,7 @@
 
 <ol>
 {% for step in page.extra.steps %}
-    <li>{{ step }}</li>
+    <li><div class="step">Step {{loop.index}}:</div> {{ step }}</li>
 {% endfor %}
 </ol>
 

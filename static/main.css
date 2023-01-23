@@ -54,12 +54,23 @@ nav {
 .steps > ol {
     padding-left: 22px;
     list-style: none;
-    counter-reset: step-counter 0;
 }
 
 .steps > ol > li {
     list-style: none;
-    counter-increment: step-counter 1;
+    margin-bottom: 1.2rem;
+}
+
+li > .step {
+    display: inline;
+    font-weight: bold;
+}
+
+
+li > .step:hover {
+    box-shadow: none
+}
+
 }
 
 .steps > ol > li:before {
