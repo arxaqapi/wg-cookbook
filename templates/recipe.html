@@ -26,10 +26,13 @@
 <h3>
     Ingredients
 </h3>
-<ul>
+<ul class="ingredients">
     {% for ing in page.extra.ingredients %}
     <li>
-        {{ ing.name }}{% if ing.amount %}: {{ ing.amount }}{% endif %}{% if ing.unit %} {{ ing.unit }}{% endif %}
+        <input type="checkbox" id="ig-{{loop.index}}">
+        <label for="ig-{{loop.index}}">
+            {{ ing.name }}{% if ing.amount %}: {{ ing.amount }}{% endif %}{% if ing.unit %} {{ ing.unit }}{% endif %}
+        </label>
     </li>
     {% endfor %}
 </ul>

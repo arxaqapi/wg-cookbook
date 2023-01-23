@@ -71,9 +71,11 @@ li > .step:hover {
     box-shadow: none
 }
 
+ul.ingredients > li {
+    list-style-type: none;
 }
 
-.steps > ol > li:before {
-    text-decoration: underline;
-    content: "Step " counter(step-counter) ": " ;
+ul.ingredients > li > input:checked + label {
+    text-decoration: line-through;
+    color: rgb(184, 184, 184);
 }
