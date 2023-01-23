@@ -47,7 +47,12 @@
 
 <ol>
 {% for step in page.extra.steps %}
-    <li><div class="step">Step {{loop.index}}:</div> {{ step }}</li>
+    <li>
+        <input type="checkbox" id="step-{{loop.index}}">
+        <label for="step-{{loop.index}}">
+            <div class="step">Step {{loop.index}}:</div> {{ step }}
+        </label>
+    </li>
 {% endfor %}
 </ol>
 

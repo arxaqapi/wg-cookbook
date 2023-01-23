@@ -61,13 +61,13 @@ nav {
     margin-bottom: 1.2rem;
 }
 
-li > .step {
+.steps > ol > li > label > div.step {
     display: inline;
     font-weight: bold;
 }
 
 
-li > .step:hover {
+.steps > .step:hover {
     box-shadow: none
 }
 
@@ -76,6 +76,15 @@ ul.ingredients > li {
 }
 
 ul.ingredients > li > input:checked + label {
+    text-decoration: line-through;
+    color: rgb(184, 184, 184);
+}
+
+.steps > ol > li > input {
+    display: none;
+}
+
+.steps > ol > li input:checked + label {
     text-decoration: line-through;
     color: rgb(184, 184, 184);
 }
